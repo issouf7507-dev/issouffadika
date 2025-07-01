@@ -31,12 +31,14 @@ jobs:
           host: 168.231.106.21
           username: root
           key: |
+            -----BEGIN OPENSSH PRIVATE KEY-----
             b3BlbnNzaC1rZXktdjEAAAAACmFlczI1Ni1jdHIAAAAGYmNyeXB0AAAAGAAAABB65yx7Xg
             01YihfAD9gqjUYAAAAGAAAAAEAAAAzAAAAC3NzaC1lZDI1NTE5AAAAIDnva4vHqoiHD36m
             AlJMl4KCzFxPIJEfIq10yZUBT8sNAAAAoI6dRxuG/kv+FsWEjl8b15L60cDXa4k3a0dt6I
             tvMht0w1rc24LNeNlRuO48WWyDnMreCXIoP5I5AaB9UAlTY05n3KMe9RhXQK0SOBMDS0/j
             QYdXthQYl7vvGMYPGcxoD1DRdcFI/0XsIOFzUPbLmzUAqovaTVLCjRa0nhFr7OQ8XuBxSZ
             UFcDglBt1PEQG1kkirovaa7UcVCaDTgQ2t/T8=
+            -----END OPENSSH PRIVATE KEY-----
           port: 22
           # envs: VPS_SSH_KEY
           script: |
