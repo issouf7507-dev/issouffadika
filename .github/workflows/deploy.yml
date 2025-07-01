@@ -64,8 +64,18 @@ jobs:
             # Construire l'application
             npm run build
 
-            # Redémarrer le service PM2
-            pm2 restart issouffadika || pm2 start npm --name "issouffadika" -- start
+                        # Arrêter le processus PM2 existant s'il existe
+            pm2 stop issouffadika 2>/dev/null || true
+            pm2 delete issouffadika 2>/dev/null || true
+
+                        # Tuer tout processus utilisant le port 3001
+            lsof -ti:3001 | xargs kill -9 2>/dev/null || true
+
+            # Démarrer le service PM2 sur le port 3001
+            pm2 start npm --name "issouffadika" -- start -- -p 3001
+
+            # Sauvegarder la configuration PM2
+            pm2 save
 
             # Nettoyer les anciennes sauvegardes (garder les 5 plus récentes)
             cd /var/www/webapp/issouffadika
