@@ -59,12 +59,18 @@ jobs:
             cd current
 
             # Installer les dépendances
-            npm ci --production
+            npm ci
 
             # Construire l'application
             npm run build
 
-                        # Arrêter le processus PM2 existant s'il existe
+            # Vérifier que le build existe
+            if [ ! -d ".next" ]; then
+              echo "Erreur: Le build .next n'existe pas!"
+              exit 1
+            fi
+
+            # Arrêter le processus PM2 existant s'il existe
             pm2 stop issouffadika 2>/dev/null || true
             pm2 delete issouffadika 2>/dev/null || true
 
