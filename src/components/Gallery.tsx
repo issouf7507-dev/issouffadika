@@ -237,7 +237,7 @@ export default function Gallery() {
                 </button>
 
                 {/* Image */}
-                <div className="relative w-[25vw] h-[25vw]">
+                <div className="relative w-96 h-96 sm:w-[25vw] sm:h-[25vw] md:w-[20vw] md:h-[20vw]">
                   <Image
                     src={selectedItem.image}
                     alt={selectedItem.title}
