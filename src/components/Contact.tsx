@@ -60,7 +60,7 @@ export default function Contact() {
             }`}
           >
             <a
-              href="https://www.linkedin.com/in/issouf-fadika-ab3a6a61"
+              href="https://www.linkedin.com/in/issouf-fadika-ab3a6a61/?originalSubdomain=ci"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-gold-gradient text-black font-semibold rounded-lg shadow-gold hover:shadow-2xl hover:scale-105 transition-all duration-300 transform animate-glow"

@@ -98,15 +98,14 @@ export default function Hero() {
                     </motion.div>
 
                     {/* TODO: Décommenter et ajuster quand vous aurez la photo */}
-                    {/* 
+
                     <Image
-                      src="/issouf-fadika-photo.jpg" // TODO: Ajouter la photo dans le dossier public/
+                      src="/img/issouf-fadika.jpeg" // TODO: Ajouter la photo dans le dossier public/
                       alt="Issouf Fadika - Président du conseil d'administration"
                       fill
                       className="rounded-full object-cover shadow-gold hover:shadow-2xl transition-all duration-300"
                       priority
                     />
-                    */}
 
                     {/* Decorative elements around photo */}
                     <motion.div
@@ -155,7 +154,7 @@ export default function Hero() {
                   animate={{ opacity: 1 }}
                   transition={{ delay: 1, duration: 0.5 }}
                 >
-                  TODO: Ajouter votre photo professionnelle
+                  {/* TODO: Ajouter votre photo professionnelle */}
                 </motion.p>
               </div>
             </SlideInLeft>
