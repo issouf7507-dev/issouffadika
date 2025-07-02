@@ -1,6 +1,6 @@
 <?php
 // Webhook pour déclencher le déploiement automatique
-// À placer sur votre serveur VPS
+// À placer sur votre serveur VPSd
 
 // Configuration
 $secret = 'votre_secret_webhook'; // Changez ceci
