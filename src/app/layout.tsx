@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ScrollProgress from "@/components/ScrollProgress";
+import MobileNav from "@/components/MobileNav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,42 @@ export default function RootLayout({
     <html lang="fr">
       <body className={inter.className}>
         <ScrollProgress />
+        <nav className="h-20 bg-dark-gold border-b border-gold shadow-gold flex items-center justify-between w-full m-auto px-4 md:px-10">
+          <div className="font-bold text-xl md:text-2xl text-gold">I-F</div>
+
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex gap-8 items-center">
+            <a
+              href="/"
+              className="text-gold font-bold text-lg hover:text-white transition-colors"
+            >
+              Accueil
+            </a>
+            <a
+              href="/Social"
+              className="text-gold font-semibold hover:text-white transition-colors"
+            >
+              Social
+            </a>
+            <a
+              href="/Politique"
+              className="text-gold font-semibold hover:text-white transition-colors"
+            >
+              Politique
+            </a>
+            <a
+              href="/Economique"
+              className="text-gold font-semibold hover:text-white transition-colors"
+            >
+              Économique
+            </a>
+          </div>
+
+          {/* Mobile Navigation */}
+          <div className="md:hidden">
+            <MobileNav />
+          </div>
+        </nav>
         {children}
       </body>
     </html>

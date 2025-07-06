@@ -12,6 +12,9 @@ import Experience from "@/components/Experience";
 import Gallery from "@/components/Gallery";
 import Hero from "@/components/Hero";
 import Skills from "@/components/Skills";
+// import Social from "@/app/Social";
+// import Politique from "@/app/Politique";
+// import Economique from "@/app/Economique";
 
 export default function Home() {
   return (
