@@ -100,7 +100,7 @@ export default function Hero() {
                     {/* TODO: Décommenter et ajuster quand vous aurez la photo */}
 
                     <Image
-                      src="/img/issouf-fadika.jpeg" // TODO: Ajouter la photo dans le dossier public/
+                      src="/img/base.jpeg" // TODO: Ajouter la photo dans le dossier public/
                       alt="Issouf Fadika - Président du conseil d'administration"
                       fill
                       className="rounded-full object-cover shadow-gold hover:shadow-2xl transition-all duration-300"
