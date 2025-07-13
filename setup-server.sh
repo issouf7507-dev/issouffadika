@@ -73,7 +73,7 @@ sudo ufw allow 80
 sudo ufw allow 443
 sudo ufw --force enable
 
-echo "✅ Configuration du serveur terminée!"
+echo "✅ Configuration du serveur terminée! enfin c'est bon"
 echo "📝 Prochaines étapes:"
 echo "1. Configurez les secrets GitHub Actions"
 echo "2. Configurez le webhook GitHub"
